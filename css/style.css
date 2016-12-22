@@ -5,12 +5,14 @@
 
 body {
     background: #505050;
+    color: #fff;
 }
 
 .wrapper {
     width: 450px;
     margin: 25px auto;
 }
+/********** Tab ***********/
 
 .tab__container ul {
     display: flex;
@@ -29,7 +31,6 @@ li a {
     font-weight: 900;
     text-decoration: none;
     text-align: center;
-    /*border: 1px solid #fff;*/
     display: block;
 }
 
@@ -38,11 +39,10 @@ li.active a, li.active:hover a {
 }
 
 li:hover a {
-    background: red;
+    background: #ff7200;
 }
 
 .content {
-    color: #fff;
     background: #404040;
     text-align: justify;
     display: none;
@@ -54,12 +54,66 @@ li:hover a {
 
 .content h3 {
     padding-top: 13px;
-    text-align: center;
     font-size: 18px;
     font-style: italic;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .content p {
     padding: 7px 15px 20px;
+}
+
+/*********** Form ***********/
+
+form.wrapper {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #404040;
+}
+
+.position__form {
+    width: 240px;
+    margin-left: 35px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.position__form input {
+    width: 150px;
+}
+
+form label, form input {
+    text-align: left;
+}
+
+.button__form {
+    color: #fff;
+    width: 90px;
+    height: 25px;
+    margin-left: 35px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ff7200;
+    border-radius: 5px;
+    background-color: #505050;
+    display: inline-block;
+}
+
+.button__form:hover {
+    background-color: #ff7200;
+}
+
+#tooltip {
+    width: 130px;
+    padding: 2px 5px;
+    background: #ff7200;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 255px;
 }
